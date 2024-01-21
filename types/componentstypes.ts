@@ -1,3 +1,4 @@
-export type cardTypes={
+
+export type buttonTypes={
     title:string
 }

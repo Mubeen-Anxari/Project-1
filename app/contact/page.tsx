@@ -21,14 +21,14 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  const onChangeHandle = (e) => {
+  const onChangeHandle = (e:any) => {
     const { name, value } = e.target;
     setForm((prevData) => ({
       ...prevData,
       [name]: value,
     }));
   };
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     e.preventDefault();
     console.log(form);
   };

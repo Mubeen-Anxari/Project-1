@@ -10,7 +10,7 @@ export default function Project() {
        <Link className=" bg-white px-6 hover:bg-lime-600 hover:text-black rounded-full text-black" href="/2">Project</Link>
        <Link className=" bg-white px-6 hover:bg-lime-600 hover:text-black rounded-full text-black" href="/4 ">Contact</Link>
       </div>
-      <All />
+     
 
     </div>
   );

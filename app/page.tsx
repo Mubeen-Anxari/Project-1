@@ -5,6 +5,7 @@ import About from "./about/page";
 import Project from "./project/page";
 import Contact from "./contact/page";
 import All from "./all/page";
+import Button from "./components/button/button";
 export default function Home() {
   return (
     <div>
@@ -22,6 +23,7 @@ export default function Home() {
               <Link className="text-white" href="/contact">
                 Contact
               </Link>
+              <Link className=" text-white " href="/blog">Blogs</Link>
             </div>
           </div>
         </div>
@@ -33,7 +35,7 @@ export default function Home() {
             Hello please check my work
           </h1>
           <h1 className="text-white font-bold text-3xl m-4 ml-16">
-            I am becoming a Developer
+            Becoming a Developer
           </h1>
           <p className=" text-white  w-[96] m-4 ml-20">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -41,13 +43,15 @@ export default function Home() {
             corporis deleniti veniam incidunt saepe quod voluptatem? Enim,
             fugiat!
           </p>
-          <div>
-            <button  className="bg-red-900 text-white ml-24 w-20 rounded-xl py-2 hover:bg-blue-950">
+          <div className=" flex ">
+            {/* <button  className="bg-red-900 text-white ml-24 w-20 rounded-xl py-2 hover:bg-blue-950">
               Apply
-            </button>
-            <button  className="bg-red-900 text-white ml-4 w-20 rounded-xl py-2 hover:bg-blue-950">
+            </button> */}
+            <Button title="Apply" />
+            {/* <button    className="bg-red-900 text-white ml-4 w-20 rounded-xl py-2 hover:bg-blue-950">
               Submit
-            </button>
+            </button> */}
+            <Button  title="Submit" />
           </div>
         </div>
         <div className="2">
@@ -62,6 +66,7 @@ export default function Home() {
       </div>
       <hr />
       <About />
+      
       <Project />
       <All />
     <Contact />
