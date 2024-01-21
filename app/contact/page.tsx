@@ -21,14 +21,14 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  const onChangeHandle = (e:any) => {
+  const onChangeHandle = (e: any) => {
     const { name, value } = e.target;
     setForm((prevData) => ({
       ...prevData,
       [name]: value,
     }));
   };
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     e.preventDefault();
     console.log(form);
   };
@@ -41,7 +41,7 @@ export default function Contact() {
       <div className="grid grid-cols-2 mb-28">
         <div className="1 m-4">
           <h1 className="text-white text-2xl font-bold ml-24 mt-24">
-            Let's Connect:
+            Lets Connect:
           </h1>
           <p className=" w-[450px] text-gray-600 mt-2 ml-24">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
@@ -102,7 +102,6 @@ export default function Contact() {
                 value={form.message}
               />
             </div>
-            <div className="mb-4">{/* Add more form fields here */}</div>
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full  rounded focus:outline-none focus:shadow-outline"
               type="submit"
@@ -115,12 +114,10 @@ export default function Contact() {
       <hr />
       <div className=" flex justify-between mx-20">
         <div className="1">
-        <h1 className="text-white ">Mubeen Ansari</h1>
+          <h1 className="text-white ">Mubeen Ansari</h1>
         </div>
         <p className="text-gray-600">All rights reserved.</p>
-        
       </div>
-      
     </div>
   );
 }
